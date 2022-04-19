@@ -1,6 +1,7 @@
 import {React, useState} from 'react'
 
 import Card from './Card.js'
+
 // Object.keys(element).includes('warning_message')
 const CardContainer = ({ data }) => {
     // const[criminals,setCriminals] = useState([])
@@ -19,6 +20,7 @@ const CardContainer = ({ data }) => {
                 <Card element={element} />
             )
         })}
+        
     </div>
 )}
 
