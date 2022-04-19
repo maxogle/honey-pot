@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
+import CardContainer from './CardContainer.js'
 
 const HomePage = () => {
     let [data, setData] = useState([])
@@ -7,13 +8,13 @@ const HomePage = () => {
         (async() =>{
             let req = await fetch('https://api.fbi.gov/wanted/v1/list')
             let res = await req.json()
-            setData(res)
+            setData(res.items)
         })()
     }, [])
-    console.log(data)
+    
     return(
         <div>
-
+           <CardContainer data={data}/> 
         </div>
     )
 }
