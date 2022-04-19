@@ -11,7 +11,7 @@ const HomePage = () => {
             setData(res.items)
         })()
     }, [])
-    
+    console.log(data)
     return(
         <div>
             <img className="page-header" src="./HONEYPOT.png" alt='header' />

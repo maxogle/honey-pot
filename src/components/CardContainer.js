@@ -1,12 +1,20 @@
-import React from 'react'
-import { useState } from 'react'
-import Card from './Card.js'
+import {React, useState} from 'react'
 
+import Card from './Card.js'
+// Object.keys(element).includes('warning_message')
 const CardContainer = ({ data }) => {
-    console.log(data)
+    // const[criminals,setCriminals] = useState([])
+    let exists = data.filter((element) => {
+        if (element.warning_message != null){
+            return element;
+        }
+    
+    })
+    console.log(exists)
+    // setCriminals(exists)
     return(
     <div>
-        {data.map((element) => {
+        {exists.map((element) => {
             return (
                 <Card element={element} />
             )
@@ -14,17 +22,14 @@ const CardContainer = ({ data }) => {
     </div>
 )}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+// const[criminals,setCriminals]=useState([])
+//     let list = []
+//     for (const warning_message of data){
+//         if (warning_message=''){
+//             list.push(data[warning_message])
+//         }
+//     }
+//     setCriminals(list)
+//     console.log(criminals)
+ 
 export default CardContainer
