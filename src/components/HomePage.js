@@ -14,6 +14,7 @@ const HomePage = () => {
     
     return(
         <div>
+            <img src="/home/max/Development/code/phase-2/honey-pot/public/HONEYPOT.png" alt='header' />
            <CardContainer data={data}/> 
         </div>
     )
