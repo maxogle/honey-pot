@@ -1,17 +1,15 @@
 import {React, useState} from 'react'
 
 import Card from './Card.js'
-// Object.keys(element).includes('warning_message')
+
 const CardContainer = ({ data }) => {
-    // const[criminals,setCriminals] = useState([])
+    
     let exists = data.filter((element) => {
         if (element.warning_message != null){
             return element;
         }
-    
     })
     console.log(exists)
-    // setCriminals(exists)
     return(
     <div>
         {exists.map((element) => {
