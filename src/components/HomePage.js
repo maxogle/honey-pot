@@ -5,7 +5,7 @@ import Form from './Form.js'
 import About from './About.js'
 import UserPosts from './UserPosts.js'
 import { Switch, Route } from "react-router-dom";
-import NavBar from "./NavBar.js"
+import Header from "./Header.js"
 
 
 const HomePage = () => {
@@ -24,7 +24,7 @@ const HomePage = () => {
     return(
         <div>
             {/* <img className="page-header" src="./HONEYPOT.png" alt='header' /> */}
-            <NavBar onChangePage={setPage}/>
+            <Header onChangePage={setPage}/>
              <Switch>
                 <Route path="/about">
                     <About/>
