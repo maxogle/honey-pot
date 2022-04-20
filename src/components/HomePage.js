@@ -2,12 +2,16 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import CardContainer from './CardContainer.js'
 import Form from './Form.js'
-import Header from './Header.js'
+import About from './About.js'
 import UserPosts from './UserPosts.js'
+import { Switch, Route } from "react-router-dom";
+import NavBar from "./NavBar.js"
+
 
 const HomePage = () => {
     let [data, setData] = useState([])
     let [allData,setAllData] = useState([])
+    let [page, setPage] = useState('/')
     useEffect(() => {
         (async() =>{
             let req = await fetch('https://api.fbi.gov/wanted/v1/list')
@@ -19,11 +23,19 @@ const HomePage = () => {
     console.log(allData)
     return(
         <div>
-            <Header/>
-            <img className="page-header" src="./HONEYPOT.png" alt='header' />
-           <CardContainer data={data}/> 
-           <Form setData={setData}></Form>
-           <UserPosts />
+            {/* <img className="page-header" src="./HONEYPOT.png" alt='header' /> */}
+            <NavBar onChangePage={setPage}/>
+             <Switch>
+                <Route path="/about">
+                    <About/>
+                </Route>
+
+                
+                <CardContainer data={data}/> 
+                <Form setData={setData}></Form>
+                <UserPosts />
+            </Switch>
+            
         </div>
     )
 }
