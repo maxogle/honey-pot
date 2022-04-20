@@ -1,5 +1,6 @@
 import { React, useState, useEffect } from 'react'
 import UserCard from "./UserCard"
+import Form from "./Form"
 
 const UserPosts = () =>{
     const [userData, setUserData] = useState([])
@@ -21,6 +22,7 @@ const UserPosts = () =>{
                     )
                 })
             }
+            <Form/>
         </div>
     )
 }

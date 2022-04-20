@@ -2,14 +2,14 @@
   "posts": [
     {
       "id": 1,
-      "title": "max",
-      "img": "",
+      "title": "Max",
+      "img": "./max-mug.jpg",
       "warning_message": "too sexy"
     },
     {
       "id": 2,
-      "title": "maxwell",
-      "img": "",
+      "title": "Nicky",
+      "img": "./nicky-mug.jpg",
       "warning_message": "too hot"
     }
   ]

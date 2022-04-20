@@ -30,10 +30,13 @@ const HomePage = () => {
                     <About/>
                 </Route>
 
+                <Route path="/Home">
+                    <CardContainer data={data}/> 
+                </Route>
                 
-                <CardContainer data={data}/> 
-                <Form setData={setData}></Form>
-                <UserPosts />
+                <Route path="/UserPosts"> 
+                    <UserPosts />
+                </Route>
             </Switch>
             
         </div>
