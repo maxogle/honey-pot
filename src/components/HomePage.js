@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import CardContainer from './CardContainer.js'
 import Form from './Form.js'
+import Header from './Header.js'
 
 const HomePage = () => {
     let [data, setData] = useState([])
@@ -17,6 +18,7 @@ const HomePage = () => {
     console.log(allData)
     return(
         <div>
+            <Header/>
             <img className="page-header" src="./HONEYPOT.png" alt='header' />
            <CardContainer data={data}/> 
            <Form setData={setData}></Form>
