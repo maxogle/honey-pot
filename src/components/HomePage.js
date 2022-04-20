@@ -19,11 +19,11 @@ const HomePage = () => {
     console.log(allData)
     return(
         <div>
-            <Header/>
             <img className="page-header" src="./HONEYPOT.png" alt='header' />
-           <CardContainer data={data}/> 
-           <Form setData={setData}></Form>
-           <UserPosts />
+            <Header className="page-header" />
+            <CardContainer data={data}/> 
+            <Form setData={setData}></Form>
+            <UserPosts />
         </div>
     )
 }
