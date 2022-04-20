@@ -1,8 +1,10 @@
 import {React, useState} from 'react'
-
 const Form = ({setData}) => {
+    const [id, setId] = useState(0)
+    const [post, setPost] = useState([])
     const[form,setForm]=useState({
-        name: '',
+        id: id,
+        title: '',
         img: '',
         warning_message: ''
     })
@@ -10,13 +12,13 @@ return (
     <div>
         <form onSubmit={async(e)=> {
             e.preventDefault()
-            let req = await fetch("http://localhost:8000/posts/posts/1", {
+            let req = await fetch("http://localhost:8000/posts", {
           method: 'POST',
           headers:{'Content-Type': 'application/json'},
           body: JSON.stringify(form)
         })
         let res = await req.json()
-        setData(prevState => [...prevState, res] )
+        setPost((whatever)=> [...whatever, res])
 
         }}>
     <div>
@@ -27,7 +29,10 @@ return (
         <label>What you'd be wanted for ;)</label>
         <input type="text" name="warning_message" onChange={(e)=>{setForm({...form, warning_message: e.target.value})}}/>
     </div>
-    <button type="submit">
+    <button type="submit" onClick={(()=> {
+        setId(id+1)
+    
+    })}>
           Add ya terrorist self
         </button>
 
