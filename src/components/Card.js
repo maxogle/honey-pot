@@ -6,7 +6,9 @@ const Card = ({element}) =>{
     return(
         <div className="card-div">
             <h1>{element.title}</h1>
+            <div className="card-img">
             <img src={element.images[0].original} />
+            </div>
             <h2>{element.warning_message}</h2>
             <button onClick={
                 (e)=> {
