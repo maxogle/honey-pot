@@ -66,6 +66,11 @@ margin-bottom: 2%;
 
 }
 
+h2 {
+  font-size: 130px;
+  margin-top: -1%;
+  margin-bottom: -1%;
+}
 
 .about {
   box-sizing: content-box;
@@ -74,9 +79,7 @@ margin-bottom: 2%;
   border-width: 5px; 
   background-color: #ff66c4;
   font-size: 65px;
-  margin-top: 10%;
+  margin-top: 1%;
   margin-left: 13%;
   justify-content: end;
-
-  
 }
