@@ -6,7 +6,7 @@ const UserCard = ({element}) =>{
     return(
         <div>
             <h1>{element.title}</h1>
-            <img src={element.img} />
+            <img calssName="user-img" src={element.img} />
             <h2>{element.warning_message}</h2>
             <button onClick={
                 (e)=> {

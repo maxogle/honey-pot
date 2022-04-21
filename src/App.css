@@ -18,6 +18,17 @@
   padding-bottom: 10px;
 }
 
+.user-card {
+  height: 650px;
+  width: 450;
+}
+
+.user-img {
+  height: 650px;
+  width: 450px;
+  
+}
+
 
 /* h1 {
   border: black solid;
