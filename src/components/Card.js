@@ -4,7 +4,7 @@ const Card = ({element}) =>{
     const [like,setLike]=useState(false)
     let likes = like ? "w0w" : "ew"
     return(
-        <div>
+        <div className="card-div">
             <h1>{element.title}</h1>
             <img src={element.images[0].original} />
             <h2>{element.warning_message}</h2>
