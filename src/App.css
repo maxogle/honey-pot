@@ -19,7 +19,26 @@
 }
 
 
+/* h1 {
+  border: black solid;
+  display: inline;
+} */
 
+.card-div {
+border: black solid;
+border-style: dotted;
+box-sizing: border-box;
+border-width: 20px;
+border-collapse: separate;
+border-spacing: 5px 3rem;
+padding-bottom: 100px;
+margin-bottom: 2%;
+}
+.card-img{
+  display:flex;
+  justify-content: center;
+  padding-top: 20px;
+}
 .nav-bar {
   height: 100vh;
   display: flex;
@@ -46,6 +65,7 @@
   
 
 }
+
 
 .about {
   box-sizing: content-box;
