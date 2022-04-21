@@ -11,6 +11,12 @@
       "title": "Nicky",
       "img": "./nicky-mug.jpg",
       "warning_message": "too hot"
+    },
+    {
+      "id": 3,
+      "title": "",
+      "img": "",
+      "warning_message": ""
     }
   ]
 }
