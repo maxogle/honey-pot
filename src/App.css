@@ -44,10 +44,8 @@
 }
 
 .post-bttn {
-  display: flex;
-  flex-direction: column;
-  padding-left: 25%;
-  padding-right: 25%;
+  height: 100px;
+  width: 100px;
 }
 /* h1 {
   border: black solid;

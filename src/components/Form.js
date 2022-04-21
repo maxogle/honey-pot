@@ -33,7 +33,7 @@ return (
             setId(id+1)
         
         })}>
-            Add ya terrorist self
+                <img src="./post.png" alt="post-button"/>
             </button>
 
         </form>
