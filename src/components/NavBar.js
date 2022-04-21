@@ -10,8 +10,12 @@ const NavBar = () => {
                     <NavLink className="nav-link" to="/Home">
                         <img className="home-button" src="./Pot2logo.png" alt="HoneyPotLogo" />
                     </NavLink>
-                    <NavLink className="nav-link" to="/UserPosts">Community</NavLink>
-                    <NavLink className="nav-link" to="/about">About</NavLink>
+                    <NavLink className="nav-link" to="/UserPosts">
+                        <img className="home-button" src="./Community.png" alt='community-button'/>
+                    </NavLink>
+                    <NavLink className="nav-link" to="/about">
+                        <img className="home-button" src="./ABOUT.png" alt="About-button" />
+                    </NavLink>
                 </nav>
             </div>
             <div>
