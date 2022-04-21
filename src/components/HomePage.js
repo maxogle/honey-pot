@@ -30,7 +30,7 @@ const HomePage = () => {
                     <About/>
                 </Route>
 
-                <Route path="/Home">
+                <Route exact path="/">
                     <CardContainer data={data}/> 
                 </Route>
                 

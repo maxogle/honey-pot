@@ -7,7 +7,7 @@ const NavBar = () => {
         <div>
             <div>
                 <nav className="nav-bar">
-                    <NavLink className="nav-link" to="/Home">
+                    <NavLink className="nav-link" to="/">
                         <img className="home-button" src="./Pot2logo.png" alt="HoneyPotLogo" />
                     </NavLink>
                     <NavLink className="nav-link" to="/UserPosts">
