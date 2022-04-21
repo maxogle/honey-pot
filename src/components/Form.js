@@ -32,9 +32,7 @@ return (
         <button className="post-bttn" type="submit" onClick={(()=> {
             setId(id+1)
         
-        })}>
-                <img src="./post.png" alt="post-button"/>
-            </button>
+        })}>Post</button>
 
         </form>
     </div>    
