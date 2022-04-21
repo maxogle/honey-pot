@@ -18,7 +18,35 @@
   padding-bottom: 10px;
 }
 
+/* .user-card {
+  /* display: flex;
+  height: 650px;
+  width: 450; */
 
+
+.user-img {
+  display: flex;
+  justify-content: center;
+  height: 650px;
+  width: 450px;
+  padding-left: 35%;
+  padding-right: 25%;
+  
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.post-bttn {
+  height: 20px;
+  width: 100px;
+}
 /* h1 {
   border: black solid;
   display: inline;
@@ -58,11 +86,14 @@ margin-bottom: 2%;
   top: 0;
   z-index: 1;
   display: flex;
+  border-radius: 50%;
 }
 
 .nav-link {
   display: flex;
-  
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
 
 }
 

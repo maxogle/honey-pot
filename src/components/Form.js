@@ -21,20 +21,18 @@ return (
         setPost((whatever)=> [...whatever, res])
 
         }}>
-    <div>
-        <label>Name</label>
-        <input type="text" name="title" onChange={(e)=>{setForm({...form, title: e.target.value})}}/>
-        <label>"Profile" Photo</label>
-        <input type="text" name="img" onChange={(e)=>{setForm({...form, img: e.target.value})}}/>
-        <label>What you'd be wanted for ;)</label>
-        <input type="text" name="warning_message" onChange={(e)=>{setForm({...form, warning_message: e.target.value})}}/>
-    </div>
-    <button type="submit" onClick={(()=> {
-        setId(id+1)
-    
-    })}>
-          Add ya terrorist self
-        </button>
+        <div className="form-container">
+            <label className="form">Name</label>
+            <input className="form" type="text" name="title" onChange={(e)=>{setForm({...form, title: e.target.value})}}/>
+            <label className="form">"Profile" Photo</label>
+            <input className="form" type="text" name="img" onChange={(e)=>{setForm({...form, img: e.target.value})}}/>
+            <label className="form">What you'd be wanted for ;)</label>
+            <input className="form" type="text" name="warning_message" onChange={(e)=>{setForm({...form, warning_message: e.target.value})}}/>
+        </div>
+        <button className="post-bttn" type="submit" onClick={(()=> {
+            setId(id+1)
+        
+        })}>Post</button>
 
         </form>
     </div>    

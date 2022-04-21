@@ -11,6 +11,24 @@
       "title": "Nicky",
       "img": "./nicky-mug.jpg",
       "warning_message": "too hot"
+    },
+    {
+      "id": 3,
+      "title": "",
+      "img": "",
+      "warning_message": ""
+    },
+    {
+      "id": 4,
+      "title": "",
+      "img": "",
+      "warning_message": ""
+    },
+    {
+      "id": 5,
+      "title": "Chris \"murder-god\" Pratt",
+      "img": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/06/06/15/Chris-Pratt.jpg?quality=75&width=982&height=726&auto=webp",
+      "warning_message": "Killing the obama family dog"
     }
   ]
 }
