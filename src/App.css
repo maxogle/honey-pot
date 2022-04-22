@@ -27,6 +27,10 @@
   border-radius: 50%;
   margin-left: 70%;
   position: fixed;
+  transition: 0.3s
+}
+.dark-mode-btn:hover {
+  transform: scale(1.1)
 }
 
 .App-link {
@@ -74,6 +78,11 @@
 .like-btn {
   width: 250px;
   height: 250px;
+  transition: 0.3s
+}
+
+.like-btn:hover {
+  transform: scale(1.1)
 }
 /* h1 {
   border: black solid;
@@ -128,6 +137,12 @@ padding-bottom: 100px;
   z-index: 1;
   display: flex;
   border-radius: 50%;
+  transition: 0.3s
+  
+}
+
+.home-button:hover {
+  transform: scale(1.1)
 }
 
 .nav-link {
@@ -177,5 +192,9 @@ padding-bottom: 100px;
   height: 240px;
   width: 240px;
   border-radius: 50%;
+  transition: 0.3s
 }
 
+.modal-button:hover {
+  transform: scale(1.1)
+}
