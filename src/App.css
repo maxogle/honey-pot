@@ -152,6 +152,8 @@ padding-bottom: 100px;
   margin-left: 15%;
   margin-right: 15%;
   justify-content: end;
+  background-color:#ff66c4;
+  padding-bottom: 50px;
 }
 
 .about-dark {
@@ -163,7 +165,9 @@ padding-bottom: 100px;
   margin-top: 1%;
   margin-left: 15%;
   margin-right: 15%;
+  padding-bottom: 50px;
   justify-content: end;
+  background-color: black;
 }
 .modal-button{
   height: 240px;
