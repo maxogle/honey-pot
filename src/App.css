@@ -71,6 +71,10 @@
   height: 20px;
   width: 100px;
 }
+.like-btn {
+  width: 250px;
+  height: 250px;
+}
 /* h1 {
   border: black solid;
   display: inline;

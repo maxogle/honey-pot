@@ -5,6 +5,7 @@ import Form from "./Form"
 const UserPosts = () =>{
     const [userData, setUserData] = useState([])
     const [postModal, setPostModal] = useState(false)
+    
 
     const togglePost = () => {
         setPostModal(!postModal)
