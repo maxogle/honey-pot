@@ -1,6 +1,6 @@
-html {
+/* html {
   background-color: #ff66c4;
-}
+} */
 
 .App {
   text-align: center;
@@ -84,7 +84,7 @@ border-width: 20px;
 border-collapse: separate;
 border-spacing: 5px 3rem;
 padding-bottom: 100px;
-margin-bottom: 2%;
+/* margin-bottom: 2%; */
 }
 
 .card-div-dark {
@@ -95,7 +95,7 @@ margin-bottom: 2%;
   border-collapse: separate;
   border-spacing: 5px 3rem;
   padding-bottom: 100px;
-  margin-bottom: 2%;
+  /* margin-bottom: 2%; */
   }
 
 
@@ -165,3 +165,9 @@ margin-bottom: 2%;
   margin-right: 15%;
   justify-content: end;
 }
+.modal-button{
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+}
+

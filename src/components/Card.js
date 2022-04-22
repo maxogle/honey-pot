@@ -10,7 +10,7 @@ const Card = ({element, darkMode, setDarkMode}) =>{
             <img src={element.images[0].original} />
             </div>
             <h2>{element.warning_message}</h2>
-            <button onClick={
+            <button type="button" onClick={
                 (e)=> {
                     e.preventDefault()
                     setLike(!like)

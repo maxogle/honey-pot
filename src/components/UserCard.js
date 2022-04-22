@@ -8,7 +8,7 @@ const UserCard = ({element}) =>{
             <h1>{element.title}</h1>
             <img className="user-img" src={element.img} />
             <h2>{element.warning_message}</h2>
-            <button onClick={
+            <button type="button" onClick={
                 (e)=> {
                     e.preventDefault()
                     setLike(!like)

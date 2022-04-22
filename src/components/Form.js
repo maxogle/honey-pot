@@ -1,9 +1,7 @@
 import {React, useState} from 'react'
-const Form = ({setData}) => {
-    const [id, setId] = useState(0)
-    const [post, setPost] = useState([])
+const Form = ({postModal, setPostModal, setUserData}) => {
+    
     const[form,setForm]=useState({
-        id: id,
         title: '',
         img: '',
         warning_message: ''
@@ -18,8 +16,8 @@ return (
           body: JSON.stringify(form)
         })
         let res = await req.json()
-        setPost((whatever)=> [...whatever, res])
-
+        setUserData((whatever)=> [...whatever, res])
+        setPostModal(!postModal)
         }}>
         <div className="form-container">
             <label className="form">Name</label>
@@ -29,10 +27,7 @@ return (
             <label className="form">What you'd be wanted for ;)</label>
             <input className="form" type="text" name="warning_message" onChange={(e)=>{setForm({...form, warning_message: e.target.value})}}/>
         </div>
-        <button className="post-bttn" type="submit" onClick={(()=> {
-            setId(id+1)
-        
-        })}>Post</button>
+        <button className="post-bttn" type="submit" >Post</button>
 
         </form>
     </div>    
