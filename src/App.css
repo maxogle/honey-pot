@@ -11,7 +11,7 @@ html {
 
 .App-dark {
   text-align: center;
-  background-color: blue;
+  background-color: black;
   font-family: 'Poiret One', cursive;
   color: red; 
 
@@ -75,6 +75,19 @@ border-spacing: 5px 3rem;
 padding-bottom: 100px;
 margin-bottom: 2%;
 }
+
+.card-div-dark {
+  border: red solid;
+  border-style: dotted;
+  box-sizing: border-box;
+  border-width: 20px;
+  border-collapse: separate;
+  border-spacing: 5px 3rem;
+  padding-bottom: 100px;
+  margin-bottom: 2%;
+  }
+
+
 .card-img{
   display:flex;
   justify-content: center;
@@ -122,6 +135,18 @@ margin-bottom: 2%;
   box-sizing: content-box;
   border: solid;
   border-color: black;
+  border-width: 5px; 
+  font-size: 45px;
+  margin-top: 1%;
+  margin-left: 15%;
+  margin-right: 15%;
+  justify-content: end;
+}
+
+.about-dark {
+  box-sizing: content-box;
+  border: solid;
+  border-color: red;
   border-width: 5px; 
   font-size: 45px;
   margin-top: 1%;

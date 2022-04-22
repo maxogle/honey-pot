@@ -3,7 +3,7 @@ import {React, useState} from 'react'
 import Card from './Card.js'
 
 // Object.keys(element).includes('warning_message')
-const CardContainer = ({ data }) => {
+const CardContainer = ({ data, darkMode, setDarkMode }) => {
     // const[criminals,setCriminals] = useState([])
     let exists = data.filter((element) => {
         if (element.warning_message != null){
@@ -17,7 +17,7 @@ const CardContainer = ({ data }) => {
     <div>
         {exists.map((element) => {
             return (
-                <Card element={element} />
+                <Card element={element} darkMode={darkMode} setDarkMode={setDarkMode}/>
             )
         })}
         

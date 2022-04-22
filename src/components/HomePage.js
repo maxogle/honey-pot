@@ -30,11 +30,11 @@ const HomePage = ({darkMode, setDarkMode}) => {
             <NavBar onChangePage={setPage}/>
              <Switch>
                 <Route path="/about">
-                    <About/>
+                    <About darkMode={darkMode} setDarkMode={setDarkMode}/>
                 </Route>
 
                 <Route exact path="/">
-                    <CardContainer data={data}/> 
+                    <CardContainer data={data} darkMode={darkMode} setDarkMode={setDarkMode}/> 
                 </Route>
                 
                 <Route path="/UserPosts"> 
