@@ -9,6 +9,15 @@ html {
 
 }
 
+.App-dark {
+  text-align: center;
+  background-color: blue;
+  font-family: 'Poiret One', cursive;
+  color: red; 
+
+
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -114,7 +123,6 @@ margin-bottom: 2%;
   border: solid;
   border-color: black;
   border-width: 5px; 
-  background-color: #ff66c4;
   font-size: 45px;
   margin-top: 1%;
   margin-left: 15%;

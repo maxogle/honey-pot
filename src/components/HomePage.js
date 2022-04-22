@@ -8,10 +8,13 @@ import { Switch, Route } from "react-router-dom";
 import NavBar from "./NavBar.js"
 
 
-const HomePage = () => {
+const HomePage = ({darkMode, setDarkMode}) => {
     let [data, setData] = useState([])
     let [allData,setAllData] = useState([])
     let [page, setPage] = useState('/')
+    let toggleDarkMode = () => {
+        setDarkMode(!darkMode)
+    }
     useEffect(() => {
         (async() =>{
             let req = await fetch('https://api.fbi.gov/wanted/v1/list')
@@ -23,7 +26,7 @@ const HomePage = () => {
     console.log(allData)
     return(
         <div>
-            {/* <img className="page-header" src="./HONEYPOT.png" alt='header' /> */}
+            <button onClick={toggleDarkMode}>Dark Mode</button>
             <NavBar onChangePage={setPage}/>
              <Switch>
                 <Route path="/about">
