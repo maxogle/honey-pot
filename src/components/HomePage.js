@@ -26,7 +26,9 @@ const HomePage = ({darkMode, setDarkMode}) => {
     console.log(allData)
     return(
         <div>
-            <button onClick={toggleDarkMode}>Dark Mode</button>
+            {
+                darkMode ? <img  src="./LightMode.png" alt="Light-Mode-Button" className="dark-mode-btn" onClick={toggleDarkMode}/> : <img  src="./DarkMode.png" alt="Dark-Mode-Button" className="dark-mode-btn" onClick={toggleDarkMode}/>
+            }
             <NavBar onChangePage={setPage}/>
              <Switch>
                 <Route path="/about">
